@@ -15,6 +15,12 @@ import java.util.*;
 public class CodigoFinal {
    
     private PrintWriter fichero;
+    private String archivoCF;
+    
+    public CodigoFinal(String nombreDelPrograma) {
+        String nombreNuevo = nombreDelPrograma.substring(0, nombreDelPrograma.lastIndexOf("."));
+        archivoCF = nombreNuevo.concat(".ens");
+    }
     
     private void escribirLinea(String linea) {
 		fichero.println(linea);
