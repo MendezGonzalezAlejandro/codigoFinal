@@ -14,16 +14,23 @@ import java.util.*;
  */
 public class CodigoFinal {
    
+    private CodigoIntermedio codigoIntermedio;
     private PrintWriter fichero;
     private String archivoCF;
     
-    public CodigoFinal(String nombreDelPrograma) {
+    public CodigoFinal(CodigoIntermedio CI, String nombreDelPrograma) {
+        codigoIntermedio = CI;
         String nombreNuevo = nombreDelPrograma.substring(0, nombreDelPrograma.lastIndexOf("."));
         archivoCF = nombreNuevo.concat(".ens");
     }
     
+     
     private void escribirLinea(String linea) {
 		fichero.println(linea);
+    }
+    
+    public void traducirCodigo(){
+    
     }
     
 	private void procesarCuadrupla(Cuadrupla cuadrupla)throws IOException {
