@@ -24,9 +24,23 @@ public class CodigoFinal {
         archivoCF = nombreNuevo.concat(".ens");
     }
     
-     
+    private void abrirFichero() throws IOException {
+		fichero = new PrintWriter(
+			new BufferedWriter(
+				new FileWriter(archivoCF)));
+	}
+    
+    private void cerrarFichero() {
+	fichero.close();
+    }
+    
+    
     private void escribirLinea(String linea) {
 		fichero.println(linea);
+    }
+    
+    private void lineaBlanco() {
+		fichero.println("");
     }
     
     public void traducirCodigo(){
