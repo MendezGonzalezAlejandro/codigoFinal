@@ -14,13 +14,13 @@ public class Cuadrupla {
    String nombre;
    String op1;
    String op2;
-   String resul;
+   String res;
 
     public Cuadrupla(String n, String p1, String p2, String r) {
         nombre = n;
         op1 = p1;
         op2 = p2;
-        resul = r;
+        res = r;
     }
 
     public String getNombre() {
@@ -35,8 +35,8 @@ public class Cuadrupla {
         return op2;
     }
 
-    public String getResul() {
-        return resul;
+    public String getRes() {
+        return res;
     }
 
 }
