@@ -10,7 +10,7 @@ import java.util.*;
 
 /**
  *
- * @author mende
+ * @author mend
  */
 public class CodigoFinal {
 
@@ -54,7 +54,7 @@ public class CodigoFinal {
 
     private void procesarCuadrupla(Cuadrupla cuadrupla) throws IOException {
         String op1, op2, inst, res;
-        String linea = " ";
+        String linea = "                                        ";
         op1 = cuadrupla.op1;
         op2 = cuadrupla.op2;
         inst = cuadrupla.nombre;
